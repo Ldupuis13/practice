@@ -1,0 +1,39 @@
+html, body, h1, h2,
+h3, p, ol, ul, li, a {
+padding: 0;
+border: 0;
+margin: 0;
+}
+  h1 {
+    margin: 20px 0 50px 20px;
+    color: #C8B914;
+    font-size: 54px;
+  }
+  h2 {
+    margin: 0 0 0 20px;
+    color: #676968
+  }
+  h3 {
+    margin: 0 0 0 20px;
+    color: #676968
+  }
+  a {
+    text-decoration: none;
+    color: #C8B914;
+  }
+  a:hover {
+    text-decoration: bold;
+    color: #700B2d;
+  }
+  ul .nav {
+    font-size: 19px;
+    padding: 20px 0px 50px 50px;
+    margin: 0 20px 0 0;
+    display: inline;
+    float: right;
+    list-style-type: none;
+  }
+  .artwork {
+    float: left;
+    padding: 0;
+  }
