@@ -1,18 +1,26 @@
 h1, h2, h3, p {
   margin: 0;
   border: 0px;
-  padding: 8px;
+  padding: 0 8px 0 8px;
   font-family: 'Roboto', sans-serif;
   font-weight: inherit;
   font-size: 100%
 }
+body {
+  margin-left: 20px;
+}
 h1 {
   text-align: left;
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 30px;
+  font-weight: 700;
+  font-kerning: 3px;
+  margin-top: 12.25px;
 }
-.content {
-  margin-left: 20px;
+h2 {
+  margin-top: 20.5px;
+}
+p {
+  margin-top: 5px;
 }
 header, section, footer {
   width: 796px;
@@ -24,16 +32,13 @@ header, section, footer {
 section {
   height: 298px;
 }
+header, footer {
+  height: 60px;
+}
 footer {
-  border-bottom: 2px;
-  border-style: solid;
-  border-color: #000000;
+  border-bottom: 2px solid #000000;
 }
-.middle.foobar {
-  list-style-type: none;
-  display: inline;
 
-}
 .left {
   float: left;
   width: 198px;
@@ -50,5 +55,15 @@ footer {
 /* width=400; total=600px*/
 
 .right {
+  width: 198px;
+  text-align: right;
   float: left;
 }
+.copyright {
+  float:left;
+  width: 596px;
+  height: 60px;
+  border-left: 2px solid #000000;
+  vertical-align: middle;
+  background-color: #ccd9ff;
+  }
