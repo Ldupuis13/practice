@@ -1,5 +1,5 @@
 h1, h2, h3, p {
-  margin: 0;
+  margin: 0px;
   border: 0px;
   padding: 0 8px 0 8px;
   font-family: 'Roboto', sans-serif;
@@ -16,7 +16,7 @@ h1 {
   font-kerning: 3px;
   margin-top: 12.25px;
 }
-h2 {
+h2, p.copyright {
   margin-top: 20.5px;
 }
 p {
@@ -57,7 +57,8 @@ footer {
   text-align: right;
   float: left;
 }
-.copyright {
+
+div.copyright {
   float:left;
   width: 596px;
   height: 60px;
@@ -65,6 +66,7 @@ footer {
   vertical-align: middle;
   background-color: #ccd9ff;
   }
+
 .foobar {
   float:left;
   width:171px;
@@ -73,6 +75,12 @@ footer {
   background-color: #fffacd;
   margin-top: 125px;
 }
+.foobar.right {
+    border-left: 0px;
+    text-align: left;
+}
+
 .foobar_combined {
-  margin-left: 25px;
+  margin: 0 auto;
+  width: 359px;
 }
