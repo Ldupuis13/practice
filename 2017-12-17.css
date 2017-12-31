@@ -1,41 +1,58 @@
 h1, h2, h3, p {
   margin: 0;
-  border: 0;
+  border: 0px;
+  padding: 8px;
   font-family: 'Roboto', sans-serif;
   font-weight: inherit;
   font-size: 100%
 }
+h1 {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 300;
+}
 .content {
   margin-left: 20px;
 }
-header {
-  font-size: 40px;
-  font-weight: 300;
-  border: 2px solid #000000;
-  border-bottom: none;
-  padding: 8px;
-  }
+header, section, footer {
+  width: 796px;
+  background-color: #ffb3b3;
+}
+section {
+  height: 300px;
+}
+footer {
+  position: relative;
 
-.foobar {
+}
+.middle.foobar {
   list-style-type: none;
   display: inline;
 
 }
 .left {
   float: left;
-  width: 200px;
+  border: none;
+  width: 196px;
   height: 300px;
-  padding: 8px;
-  border: 1px 1px 0 1px;
+  background-color: #ffb3b3;
+  border-left: 0px;
+  border-right: 2px;
+  border-bottom: 0px;
+  border-color: #ffffff;
   border-style: solid;
-  border-color: #000000;
 }
 .middle {
   float: left;
-  height: 300px;
-  width: 200px;
-  padding: 8px;
-  border: 1px 1px 0 1px;
+  width: 400px;
+  height: 295px;
+  border: 0 2px;
+  border-color: #ffffff;
   border-style: solid;
-  border-color: #000000;
+  background-color: #ffb3b3;
+}
+.right {
+  float: left;
+  width: 190px;
+  background-color: #ffb3b3;
 }
