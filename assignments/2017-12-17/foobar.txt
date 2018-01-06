@@ -1,0 +1,303 @@
+Last login: Thu Jan  4 15:33:10 on console
+Laurens-MBP:~ Lou$ pwd
+/Users/Lou
+Laurens-MBP:~ Lou$ cd Documents/github/practice
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    2017-12-17.css
+	deleted:    2017-12-17.html
+	deleted:    Styles.html
+	deleted:    gallery.html
+	deleted:    in progress.html
+	deleted:    index.html
+	deleted:    main.css
+	deleted:    reach out.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assignments/
+	tread-heavy/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Laurens-MBP:practice Lou$ git add -A
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	renamed:    2017-12-17.css -> assignments/2017-12-17/2017-12-17.css
+	renamed:    2017-12-17.html -> assignments/2017-12-17/2017-12-17.html
+	renamed:    Styles.html -> tread-heavy/Styles.html
+	renamed:    gallery.html -> tread-heavy/gallery.html
+	renamed:    in progress.html -> tread-heavy/in progress.html
+	renamed:    main.css -> tread-heavy/main.css
+	renamed:    reach out.html -> tread-heavy/reach out.html
+	renamed:    index.html -> tread-heavy/treadheavyart.html
+
+Laurens-MBP:practice Lou$ git commit
+[master 0457544] create tread heavy and assignment folders & reorganizes files
+ 8 files changed, 0 insertions(+), 0 deletions(-)
+ rename 2017-12-17.css => assignments/2017-12-17/2017-12-17.css (100%)
+ rename 2017-12-17.html => assignments/2017-12-17/2017-12-17.html (100%)
+ rename Styles.html => tread-heavy/Styles.html (100%)
+ rename gallery.html => tread-heavy/gallery.html (100%)
+ rename in progress.html => tread-heavy/in progress.html (100%)
+ rename main.css => tread-heavy/main.css (100%)
+ rename reach out.html => tread-heavy/reach out.html (100%)
+ rename index.html => tread-heavy/treadheavyart.html (100%)
+Laurens-MBP:practice Lou$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 752 bytes | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/Ldupuis13/practice.git
+   12a0be0..0457544  master -> master
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Laurens-MBP:practice Lou$ PWD
+/Users/Lou/Documents/github/practice
+Laurens-MBP:practice Lou$ git branch foobar
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Laurens-MBP:practice Lou$ git checkout foobar
+Switched to branch 'foobar'
+Laurens-MBP:practice Lou$ git status
+On branch foobar
+nothing to commit, working tree clean
+Laurens-MBP:practice Lou$ git status
+On branch foobar
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   assignments/2017-12-17/2017-12-17.css
+	modified:   assignments/2017-12-17/2017-12-17.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assignments/2017-12-17/2017-12-17.2.2.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Laurens-MBP:practice Lou$ git checkout assignments/2017-12-17/2017-12-12.2.2.css
+error: pathspec 'assignments/2017-12-17/2017-12-12.2.2.css' did not match any file(s) known to git.
+Laurens-MBP:practice Lou$ git checkout assignments/2017-12-17/2017-12-17.2.2.css
+error: pathspec 'assignments/2017-12-17/2017-12-17.2.2.css' did not match any file(s) known to git.
+Laurens-MBP:practice Lou$ git checkout assignments/2017-12-17/2017-12-17.2.2.css
+error: pathspec 'assignments/2017-12-17/2017-12-17.2.2.css' did not match any file(s) known to git.
+Laurens-MBP:practice Lou$ git add assignments/2017-12-17/2017-12-17.css
+Laurens-MBP:practice Lou$ git add assignments/2017-12-17/2017-12-17.html
+Laurens-MBP:practice Lou$ git status
+On branch foobar
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   assignments/2017-12-17/2017-12-17.css
+	modified:   assignments/2017-12-17/2017-12-17.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assignments/2017-12-17/2017-12-17.2.2.css
+
+Laurens-MBP:practice Lou$ git commit
+[foobar f9e6359] updates foobar to use width %'s
+ 2 files changed, 15 insertions(+), 11 deletions(-)
+Laurens-MBP:practice Lou$ git status
+On branch foobar
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assignments/2017-12-17/2017-12-17.2.2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Laurens-MBP:practice Lou$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Laurens-MBP:practice Lou$ git merge foobar
+Updating 0457544..f9e6359
+Fast-forward
+ assignments/2017-12-17/2017-12-17.css  | 24 ++++++++++++++----------
+ assignments/2017-12-17/2017-12-17.html |  2 +-
+ 2 files changed, 15 insertions(+), 11 deletions(-)
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assignments/2017-12-17/2017-12-17.2.2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Laurens-MBP:practice Lou$ git checkout foobar
+Switched to branch 'foobar'
+Laurens-MBP:practice Lou$ git branch -d foobar
+error: Cannot delete branch 'foobar' checked out at '/Users/Lou/Documents/github/practice'
+Laurens-MBP:practice Lou$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Laurens-MBP:practice Lou$ git branch -d foobar
+Deleted branch foobar (was f9e6359).
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assignments/2017-12-17/2017-12-17.2.2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Laurens-MBP:practice Lou$ git push origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 635 bytes | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Ldupuis13/practice.git
+   0457544..f9e6359  master -> master
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assignments/2017-12-17/2017-12-17.2.2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Laurens-MBP:practice Lou$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+Laurens-MBP:practice Lou$ git -rm assignments/2017-12-17/2017-12-17.2.2.css
+Unknown option: -rm
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+Laurens-MBP:practice Lou$ git -r assignments/2017-12-17/2017-12-17.2.2.css
+Unknown option: -r
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+Laurens-MBP:practice Lou$ git --help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+Laurens-MBP:practice Lou$ git rm assignments/2017-12-17/2017-12-17.2.2.css
+fatal: pathspec 'assignments/2017-12-17/2017-12-17.2.2.css' did not match any files
+Laurens-MBP:practice Lou$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assignments/2017-12-17/2017-12-17.2.2.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Laurens-MBP:practice Lou$ git statusu
+git: 'statusu' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+Laurens-MBP:practice Lou$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Laurens-MBP:practice Lou$ 
