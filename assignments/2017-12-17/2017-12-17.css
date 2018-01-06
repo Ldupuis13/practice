@@ -22,10 +22,14 @@ h2, p.copyright {
 p {
   margin-top: 5px;
 }
+.content{
+  width: 800px;
+  height: 422px
+}
 header, section, footer {
-  width: 796px;
   background-color: #ffb3b3;
-  border-width: 2px 2px 0px 2px;
+  border-width: 2px;
+  border-bottom: 0;
   border-style: solid;
   border-color: #000000;
 }
@@ -40,27 +44,27 @@ footer {
 }
 .left {
   float: left;
-  width: 198px;
+  width: 24.875%;
 }
 /* Width=200px */
 .middle {
   float: left;
-  width: 396px;
-  height: 298px;
-  border-width: 0 2px 0 2px;
+  width: 49.75%;
+  border-width: 0 2px;
   border-color: #000000;
   border-style: solid;
+  height: 300px;
 }
 /* width=400; total=600px*/
 .right {
-  width: 198px;
+  width: 24.875%;
   text-align: right;
   float: left;
 }
 
 div.copyright {
   float:left;
-  width: 596px;
+  width: 74.875%;
   height: 60px;
   border-left: 2px solid #000000;
   vertical-align: middle;
@@ -69,7 +73,7 @@ div.copyright {
 
 .foobar {
   float:left;
-  width:171px;
+  width:49%;
   border: 2px solid #000000;
   padding: 8px 0;
   background-color: #fffacd;
@@ -82,5 +86,5 @@ div.copyright {
 
 .foobar_combined {
   margin: 0 auto;
-  width: 359px;
+  width: 80%;
 }
