@@ -11,11 +11,12 @@ Template Name: Inside Pages Services Button
 <div class="container">
 <div id="inside">
 <div id="content">
-  <div class="container">
- 	       <div class="back_page"><i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size:45px; color: #a9a9a9; padding-right: 10px"></i>
- 		<?php $mg_site_url = get_site_url(); echo"
-  			<p><a href='$mg_site_url/services/'>Back to Services</a></p>"?>
- 	</div>
+  <div class="mg-container">
+     <div class="back_page">
+     <?php $mg_site_url = get_site_url(); echo "<a href='$mg_site_url/services/'>
+           <img class='back_button' src='$mg_site_url/wp-content/uploads/2015/03/back-button.png' alt='back button'/>
+       <p><a href='$mg_site_url/services/'>Back to Services</a></p>"?>
+   </div>
 <?php the_post(); ?>
 <div class="pagelink-top"><?php wp_link_pages('before=About Us: &pagelink= Page %'); ?></div>
 <?php the_content(); ?>

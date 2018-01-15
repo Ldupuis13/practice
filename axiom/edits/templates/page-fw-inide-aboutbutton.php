@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Inside Pages Services Button
+Template Name: Inside Pages About Button
 */
 ?>
 
@@ -8,14 +8,15 @@ Template Name: Inside Pages Services Button
 <div class="container-fluid">
 <?php the_post_thumbnail(); ?>
 </div>
-<div class="container">
+<div = class="container">
 <div id="inside">
 <div id="content">
-  <div class="container">
- 	       <div class="back_page"><i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size:45px; color: #a9a9a9; padding-right: 10px"></i>
+ 	  <div class="back_page"><i class="fa fa-arrow-circle-left" aria-hidden="true" style="font-size:45px; color: #a9a9a9; padding-right: 10px"></i>
  		<?php $mg_site_url = get_site_url(); echo"
-  			<p><a href='$mg_site_url/services/'>Back to Services</a></p>"?>
- 	</div>
+    <p><a href='$mg_site_url/about-us/'>Take Me to the About Page</a></p>"; ?>
+  <hr>
+  </div>
+
 <?php the_post(); ?>
 <div class="pagelink-top"><?php wp_link_pages('before=About Us: &pagelink= Page %'); ?></div>
 <?php the_content(); ?>
