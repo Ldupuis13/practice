@@ -1,0 +1,83 @@
+@mixin border-style($border: 2px) {
+  border: $border solid #000000;
+}
+
+body {
+  margin: 0 0 0 1.1723329425556858%;
+  padding: 0 .5em 0 .5em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+
+.content{
+  width: 800px;
+  height: 422px
+}
+
+h1 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  font-kerning: 3px;
+  margin-top: 12.25px;
+}
+
+p {
+  margin-top: 5px;
+}
+
+
+section {
+  background-color: #ffb3b3;
+  @include border-style(2px 2px 0);
+  height: 298px;
+}
+
+header {
+  @extend section;
+  height: 60px;
+}
+
+footer {
+  @extend header;
+  border-bottom:2px;
+}
+
+.middle, .right, div.copyright, .foobar {
+  float:left;
+}
+
+.middle {
+  width: 49.75%;
+  @include border-style(0 2px)
+  height: 300px;
+}
+
+.right {
+  width: 24.875%;
+  text-align: right;
+}
+
+div.copyright {
+  width: 74.875%;
+  height: 60px;
+  @include border-style(0 0 0 2px);
+  background-color: #ccd9ff;
+  }
+
+.foobar {
+  width:49%;
+  @include border-style();
+  padding: 8px 0;
+  background-color: #fffacd;
+  margin-top: 125px;
+  .right {
+      border-left: 0px;
+      text-align: left;
+  }
+}
+
+.foobar_combined {
+  margin: 0 auto;
+  width: 80%;
+}
