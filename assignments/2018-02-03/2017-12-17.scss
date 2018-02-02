@@ -1,5 +1,12 @@
 @mixin border-style($border: 2px) {
-  border: $border solid #000000;
+  border: $border;
+  border-style: solid;
+  border-color: #000000;
+}
+
+%a {
+  background-color: #ffb3b3;
+  @include border-style(2px 2px 0);
 }
 
 body {
@@ -15,7 +22,6 @@ body {
 }
 
 h1 {
-  text-align: left;
   font-size: 30px;
   font-weight: 700;
   font-kerning: 3px;
@@ -28,13 +34,12 @@ p {
 
 
 section {
-  background-color: #ffb3b3;
-  @include border-style(2px 2px 0);
+  @extend %a;
   height: 298px;
 }
 
 header {
-  @extend section;
+  @extend %a;
   height: 60px;
 }
 
@@ -49,7 +54,7 @@ footer {
 
 .middle {
   width: 49.75%;
-  @include border-style(0 2px)
+  @include border-style(0 2px);
   height: 300px;
 }
 
