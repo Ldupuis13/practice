@@ -1,0 +1,99 @@
+@mixin border-style($border: 2px) {
+  border-width: $border;
+  border-style: solid;
+  border-color: #000000;
+}
+
+%a {
+  background-color: #ffb3b3;
+  @include border-style(2px 2px 0 2px);
+}
+
+body {
+  margin: 0 0 0 1.1723329425556858%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+}
+
+.content{
+  width: 800px;
+  height: 422px
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+  font-kerning: 3px;
+  margin-top: 12.25px;
+  padding: 0 .25em;
+}
+
+p {
+  margin-top: 5px;
+  padding: 0 .5em 0 .5em;
+  font-size: 1.6em;
+  &.copyright {
+    margin-top: 3.5%;
+  }
+}
+
+
+section {
+  @extend %a;
+  height: 298px;
+}
+
+header {
+  @extend %a;
+  height: 60px;
+}
+
+footer {
+  @extend header;
+  border-bottom:2px solid #0000001;
+}
+
+.middle, .right, div.copyright, .foobar {
+  float:left;
+}
+
+.middle {
+  width: 49.75%;
+  @include border-style(0 2px);
+  height: 300px;
+}
+
+.right {
+  width: 24.875%;
+  text-align: right;
+}
+
+.left {
+  float: left;
+  width: 24.875%;
+}
+
+div.copyright {
+  width: 74.875%;
+  height: 60px;
+  @include border-style(0 0 0 2px);
+  background-color: #ccd9ff;
+  }
+
+.foobar {
+  width:49%;
+  @include border-style();
+  padding: 8px 0;
+  background-color: #fffacd;
+  margin-top: 125px;
+
+  &.right {
+      border-left: 0px;
+      text-align: left;
+  }
+}
+
+.foobar_combined {
+  margin: 0 auto;
+  width: 80%;
+}
