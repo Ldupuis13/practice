@@ -1,0 +1,10 @@
+If no flex-basis is specified, then the flex-basis falls back to the item’s width property.
+
+If no width is specified, then the flex-basis falls back to the computed width of the item’s contents.
+
+Especially since Safari still has an old flexbox bug where it won’t apply flex-shrink properly to items that use height instead of flex-basis.
+
+flex-basis value is limited by both the min-width and max-width
+Even though our flex-basis was set to 250px, it hit the 100px max-width limit. So our final flex-basis in this case is 100px, and our items will fit into the flex container like so
+
+flex-basis is: the size of flex items before they are placed into a flex container. It’s the ideal or hypothetical size of the items. But flex-basis is not a guaranteed size
