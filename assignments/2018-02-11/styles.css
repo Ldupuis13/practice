@@ -1,0 +1,66 @@
+/*
+<body>
+  <section>
+    <div class="flexbox">
+      <div class="item pink1">
+        <p>one</p>
+      </div>
+      <div class="item pink2">
+        <p>two</p>
+      </div>
+      <div class="item green">
+        <p>three</p>
+      </div>
+      <div class="item blue1">
+        <p>four</p>
+      </div>
+      <div class="item blue2">
+        <p>five</p>
+      </div>
+      <div class="item2 pink1">
+        <p>one</p>
+
+      </div>
+      <div class="item2 pink2">
+        <p>two</p>
+      </div>
+      <div class="item2 green">
+        <p>three</p>
+      </div>
+      <div class="item2 blue1">
+        <p>four</p>
+      </div>
+      <div class="item2 blue2">
+        <p>five</p>
+      </div>
+    </div>
+  </section>
+</body>
+*/
+.flexbox p {
+  font-family: 'gill sans nova', sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 1%;
+  text-align: center;
+  letter-spacing: .1em; }
+
+.flexbox {
+  border: 2px solid #000000;
+  min-height: 90vh;
+  display: flex; }
+
+.item, .item2 {
+  width: 100px; }
+  .item.pink1, .item2.pink1 {
+    background-color: #7D071E; }
+  .item.pink2, .item2.pink2 {
+    background-color: #CA2040; }
+  .item.green, .item2.green {
+    background-color: #D3CB36; }
+  .item.blue1, .item2.blue1 {
+    background-color: #096E97; }
+  .item.blue2, .item2.blue2 {
+    background-color: #0E5D7D; }
+
+/*# sourceMappingURL=styles.css.map */
