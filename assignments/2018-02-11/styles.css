@@ -19,6 +19,10 @@
       </div>
       <div class="item2 pink1">
         <p>one</p>
+<<<<<<< HEAD
+=======
+
+>>>>>>> flexbox
       </div>
       <div class="item2 pink2">
         <p>two</p>
@@ -46,6 +50,7 @@
 
 .flexbox {
   border: 2px solid #000000;
+<<<<<<< HEAD
   min-height: 90vh; }
 
 .item, .item2 {
@@ -55,6 +60,15 @@
   .item.pink1, .item2.pink1 {
     background-color: #7D071E;
     @flex-item; }
+=======
+  min-height: 90vh;
+  display: flex; }
+
+.item, .item2 {
+  width: 100px; }
+  .item.pink1, .item2.pink1 {
+    background-color: #7D071E; }
+>>>>>>> flexbox
   .item.pink2, .item2.pink2 {
     background-color: #CA2040; }
   .item.green, .item2.green {
