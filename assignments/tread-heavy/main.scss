@@ -1,0 +1,47 @@
+html, body, h1, h2,
+h3, p, ol, ul, li, a {
+padding: 0;
+border: 0;
+margin: 0;
+}
+h1 {
+  margin: 10px 0 0px 20px;
+  color: #C8B914;
+  font-size: 16px;
+  }
+h2 {
+  margin: 0 0 0 40px;
+  color: #676968;
+  font-size: 12px;
+  }
+h3 {
+  margin: 30px 57px 15px 20px;
+  color: #676968;
+  font-size: 56px;
+  text-align: left;
+  }
+ul li{
+  padding-left: 20px;
+}
+.nav li{
+  font-size: 19px;
+  display: inline;
+  padding: 0 0 15PX 100px;
+  list-style-type: none;
+  }
+.nav a {
+    text-decoration: none;
+    color: #C8B914;
+    }
+.nav a:hover {
+    text-decoration: bold;
+    color: #700B2d;
+    }
+.artwork li{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 20px;
+    align-items: center;
+    border: 3px
+    }
