@@ -1,0 +1,115 @@
+/* COLORS */
+
+$green: #C8B914;
+$dark-g: #505858;
+$gray: #8B8D8C;
+$light-g: #d3d3d3;
+$red: #A94B6D;
+
+/* FONT */
+
+  //@include font-serif(,)
+  @mixin font-serif($x,$color:#d3d3d3) {
+    font-family: 'Calluna', serif;
+    color: $color;
+    font-size: $x;
+  }
+
+  //@include font-sans-serif(,)
+  @mixin font-sans-serif($x,$color:#d3d3d3) {
+    font-family: 'Source Sans Pro', serif;
+    color: $color;
+    font-size: $x;
+  }
+
+//Page
+body {
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+  margin: 0;
+}
+
+//heading
+h1 {
+  margin: 2% 0 0 2%;
+  @include font-serif(3em,$gray);
+  text-align: center;
+  &.logo {
+    margin: 2% 0 0 2%;
+    @include font-sans-serif(1em,$green);
+    font-weight: lighter;
+    text-align: left;
+  }
+}
+
+h2 {
+  margin: 2% 0 0 2%;
+  @include font-serif(.6em,$dark-g);
+  &.logo {
+    margin-top: 0;
+    color: $light-g;
+    font-weight: lighter;
+  }
+}
+
+h3 {
+  margin: 30px 57px 15px 20px;
+  @include font-serif(3em,$dark-g);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  li{
+    @include font-sans-serif(.8em,$green);
+    font-weight: 200;
+    letter-spacing: .1em;
+    list-style-type: none;
+  a {
+    text-decoration: none;
+    color: $green;
+    }
+  a:hover {
+    text-decoration: bold;
+    color: $red;
+    }
+  }
+}
+
+
+//end heading
+
+ul.artwork {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0 4%;
+  padding: 0;
+  list-style-type: none;
+  li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+    border-radius: 2.5px;
+    &.horizontal {
+      height: 250px;
+      width: 48%;
+      overflow: hidden;
+      img {
+      width: 100%;
+      }
+    }
+    &.vertical {
+      height: 300px;
+      width: 32%;
+      overflow: hidden;
+      img {
+      height: auto;
+      width: 100%;
+      }
+    }
+  }
+}
