@@ -1,18 +1,33 @@
 /* COLORS */
 /* FONT */
-body {
+body.container-fluid {
   width: 100%;
   height: auto;
   background-color: #fafafa;
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  justify-content: center; }
 
-h1 {
+.page {
+  width: 95%;
+  overflow: hidden; }
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex: 1 1;
+  justify-content: flex-start;
+  flex-basis: 75%; }
+
+#bootstrap-overrides h1 {
   margin: 2% 0 0 2%;
-  font-family: 'Calluna', serif;
+  font-family: 'Source Sans Pro', serif;
   color: #8B8D8C;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center; }
-  h1.logo {
+  #bootstrap-overrides h1.logo {
     margin: 2% 0 0 2%;
     font-family: 'Source Sans Pro', serif;
     color: #C8B914;
@@ -27,8 +42,9 @@ h2 {
   font-size: 0.6em; }
   h2.logo {
     margin-top: 0;
-    color: #d3d3d3;
-    font-weight: lighter; }
+    color: #A94B6D;
+    font-weight: lighter;
+    font-size: 1em; }
 
 h3 {
   margin: 30px 57px 15px 20px;
@@ -52,6 +68,53 @@ h3 {
     .nav li a:hover {
       text-decoration: bold;
       color: #A94B6D; }
+
+#bootstrap-overrides .navbar-brand {
+  height: auto; }
+
+#bootstrap-overrides .navbar-header {
+  width: 36%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+button.navbar-toggle {
+  border: 1px solid #C8B914; }
+
+.icon-bar {
+  background-color: #C8B914; }
+
+.horizontal, .vertical {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; }
+  .horizontal .gallery, .vertical .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    margin: 3px 7px 0 7px; }
+  .horizontal img, .vertical img {
+    border-radius: 5px; }
+
+.horizontal .gallery {
+  width: 50%; }
+.horizontal img {
+  width: 100%; }
+
+.vertical .gallery {
+  width: 33.3333333%; }
+.vertical img {
+  height: 100%; }
 
 ul.artwork {
   display: inline-flex;
@@ -80,5 +143,19 @@ ul.artwork {
       ul.artwork li.vertical img {
         height: auto;
         width: 100%; }
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 768px) {
+  h2.logo {
+    text-align: center; } }
+@media only screen and (max-width: 600px) {
+  .horizontal, .vertical {
+    flex-wrap: wrap; }
+    .horizontal .gallery, .vertical .gallery {
+      width: 100%;
+      height: auto;
+      margin: 15px 0 15px 0; }
+      .horizontal .gallery img, .vertical .gallery img {
+        width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

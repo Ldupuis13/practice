@@ -1,0 +1,102 @@
+*command(ctrl) {
+ ⌘
+ option_(start) {
+ ⌘_⌥
+ control_(alt) {
+ ⌘_⌃
+ shift
+ ⌘_⇧
+}
+
+*control_(alt) {
+ ⌃
+ option_(start)
+ ⌃_⌥
+ shift
+ ⌃_⇧
+}
+
+*option_(start) {
+ ⌥
+ .control_(alt)
+ ⌥_⌃
+ shift
+ ⌥_⇧
+}
+
+*shift {
+ ⇧
+}
+
+*left {
+ ←
+}
+
+*up {
+ ↑
+}
+
+*down {
+ ↓
+}
+
+*right {
+ →
+}
+
+TAG {
+ close_current
+ ⌘_⌥_.}
+
+FOLDING {
+ fold
+  ⌘_⌥_[
+ unfold
+  ⌘_⌥_]
+ fold_all
+  ⌘_⌥__[
+  unfold_all
+  ⌘_⌥__]]
+}
+
+ SELECT! {
+  word
+  ⌃_⇧_W
+  line
+  ⌘_L
+  inside_brackets
+  ⌘_⇧_M
+  next
+  ⌘ D
+  go to matching bracket
+  ⌃ M
+ }
+
+ LINE! {
+  move_line_up/down
+  ⌘_⇧_↑/↓
+  duplicate_lines
+  ⌃_⇧_D
+  join
+  ⌘_J
+  delete
+  ⌃_⇧_K
+ }
+
+ BOOKMARK {
+  view_all
+  ⌃_F2
+  jump_to_next_bookmark
+  F2
+  jump_to_previous_bookmark
+  ⇧_F2
+ }
+
+ FIND {
+  find_next
+  ⌘_G
+  find_previous
+  ⌘_⇧_G
+  replace_next
+  ⌘_⌥
+ }
