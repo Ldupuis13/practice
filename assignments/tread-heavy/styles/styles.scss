@@ -8,118 +8,143 @@ $red: #A94B6D;
 
 /* FONT */
 
-  //@include font-serif(,)
-  @mixin font-serif($x,$color:#d3d3d3) {
-    font-family: 'Calluna', serif;
-    color: $color;
-    font-size: $x;
-  }
+//@include font-serif(,)
+@mixin font-serif($x,$color:#d3d3d3) {
+ font-family: 'Calluna', serif;
+ color: $color;
+ font-size: $x;
+}
 
-  //@include font-sans-serif(,)
-  @mixin font-sans-serif($x,$color:#d3d3d3) {
-    font-family: 'Source Sans Pro', serif;
-    color: $color;
-    font-size: $x;
-  }
+//@include font-sans-serif(,)
+@mixin font-sans-serif($x,$color:#d3d3d3) {
+ font-family: 'Source Sans Pro', serif;
+ color: $color;
+ font-size: $x;
+}
 
 //Page
-body.container-fluid {
-  width: 100%;
-  height: auto;
-  background-color: #fafafa;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+body{
+ width: 100%;
+ height: auto;
+ background-color: #fafafa;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 .page {
-  width: 95%;
-  overflow: hidden;
+ width: 95%;
+ overflow: hidden;
 }
 
 section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex: 1 1;
-    justify-content: flex-start;
-    flex-basis: 75%;
+ width: 80%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ flex-basis: 75%;
 }
 
-//heading
-#bootstrap-overrides h1 {
-  margin: 2% 0 0 2%;
-  @include font-sans-serif(2em,$gray);
-  text-align: center;
-  &.logo {
-    margin: 2% 0 0 2%;
-    @include font-sans-serif(1em,$green);
-    font-weight: lighter;
-    text-align: left;
-  }
+h1 {
+ margin: 2% 0 0 2%;
+ @include font-sans-serif(2em,$gray);
+ text-align: center;
 }
 
 h2 {
-  margin: 2% 0 0 2%;
-  @include font-serif(.6em,$dark-g);
-  &.logo {
+ margin: 2% 0 0 2%;
+ @include font-sans-serif(.6em,$dark-g);
+}
+
+h3 {
+ margin: 30px 57px 15px 20px;
+ @include font-sans-serif(3em,$dark-g);
+}
+
+strong {
+ font-weight: 600;
+}
+
+//heading
+ .logo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  a {
+  text-decoration: none;
+  }
+   h1 {
+    margin: 2% 0 0 2%;
+    @include font-sans-serif(1.5em,$dark-g );
+    text-align: left;
+    letter-spacing: .1em;
+    font-weight: 600;
+   }
+   h2 {
     margin-top: 0;
     color: $red;
     font-weight: lighter;
     font-size: 1em;
-  }
-}
+    letter-spacing: .06em;
+   }
 
-h3 {
-  margin: 30px 57px 15px 20px;
-  @include font-serif(3em,$dark-g);
-}
+ }
 
-.nav {
+ header {
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 15vh;
+  align-items: center;
+ }
+
+ .nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
   li{
-    @include font-sans-serif(.8em,$green);
-    font-weight: 200;
-    letter-spacing: .1em;
-    list-style-type: none;
-  a {
+   @include font-sans-serif(.8em,$green);
+   font-weight: 400;
+   letter-spacing: .1em;
+   list-style-type: none;
+   a {
     text-decoration: none;
     color: $green;
-    }
-  a:hover {
+   }
+   a:hover {
     text-decoration: bold;
     color: $red;
-    }
+   }
   }
-}
+ }
 
-#bootstrap-overrides .navbar-brand {
- height: auto;
-}
+ #bootstrap-overrides .navbar-brand {
+  height: auto;
+ }
 
-#bootstrap-overrides .navbar-header {
- width: 36%;
- display: flex;
- align-items: center;
- justify-content: space-between;
-}
+ #bootstrap-overrides .navbar-header {
+  width: 36%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
 
-.container {
- display: flex;
- align-items: center;
- justify-content: space-between;
-}
+ .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
 
-button.navbar-toggle {
- border: 1px solid $green;
-}
+ button.navbar-toggle {
+  border: 1px solid $green;
+ }
 
-.icon-bar {
- background-color: $green;
-}
-//end heading
+ .icon-bar {
+  background-color: $green;
+ }
+ //end heading
 
  .horizontal, .vertical {
   display: flex;
@@ -135,85 +160,57 @@ button.navbar-toggle {
    height: 100%;
    overflow: hidden;
    margin: 3px 7px 0 7px;
+   background-color: black;
+   border-radius: 5px;
   }
-   img {
-    border-radius: 5px;
-   }
-
+  img {
+   border-radius: 5px;
+   opacity: .5;
+   height: 100%;
+  }
+  img:hover {
+   opacity: 1;
+  }
  }
 
  .horizontal {
   .gallery {
    width: 50%;
   }
-   img {
-    width: 100%;
-   }
  }
 
  .vertical {
   .gallery {
    width: 33.3333333%;
   }
-   img {
-    height: 100%;
-   }
-
  }
 
-
-ul.artwork {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  margin: 0 4%;
-  padding: 0;
-  list-style-type: none;
-  li {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 20px;
-    border-radius: 2.5px;
-    &.horizontal {
-      height: 250px;
-      width: 48%;
-      overflow: hidden;
-      img {
-      width: 100%;
-      }
-    }
-    &.vertical {
-      height: 300px;
-      width: 32%;
-      overflow: hidden;
-      img {
-      height: auto;
-      width: 100%;
-      }
-    }
-  }
-}
-
-/*RESPONSIVE*/
-
-@media only screen and (max-width: 768px) {
- h2.logo {
-  text-align: center;
- }
-}
-
-@media only screen and (max-width: 600px) {
- .horizontal, .vertical {
-  flex-wrap: wrap;
+ .vertical.two {
   .gallery {
-   width: 100%;
-   height: auto;
-   margin: 15px 0 15px 0;
-   img {
+   width: 50%;
+  }
+ }
+
+
+
+ /*RESPONSIVE*/
+
+ @media only screen and (max-width: 768px) {
+  h2.logo {
+   text-align: center;
+  }
+ }
+
+ @media only screen and (max-width: 600px) {
+  .horizontal, .vertical {
+   flex-wrap: wrap;
+   .gallery {
     width: 100%;
+    height: auto;
+    margin: 15px 0 15px 0;
+    img {
+     width: 100%;
+    }
    }
   }
  }
-}
