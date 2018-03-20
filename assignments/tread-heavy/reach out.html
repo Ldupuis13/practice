@@ -7,24 +7,94 @@
  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
 
+ <script src="js/script.js"></script>
+
 </head>
 
- <body>
+<body>
 
-  <header>
-   <div class="logo">
-    <a href="treadheavyart.html" class="logo">
-    <h1>Tread Heavy Art</h1>
-    <h2><i>artwork by </i><strong>lauren dupuis</strong></h2>
+ <header>
+  <div class="logo">
+   <a href="treadheavyart.html"><h1>Tread Heavy Art</h1></a>
+   <a href="treadheavyart.html"><h2><i>artwork by </i><strong>lauren dupuis</strong></h2>
    </a>
   </div>
-   <ul class="nav">
-    <li><a href="treadheavyart.html">tread heavy</a></li>
-    <li><a href="gallery.html">gallery</a></li>
-    <li><a href="in progress.html">in progress</a></li>
-    <li><a href="reach out.html">reach out</a></li>
-   </ul>
-  </header>
+  <ul class="nav">
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/treadheavyart.html">tread heavy</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/gallery.html">gallery</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/in progress.html">in progress</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/reach out.html">reach out</a></li>
+  </ul>
 
- </body>
- </html>
+  <!--hamburger menu-->
+  <div class="hamburger_nav">
+   <div class="topnav" id="myTopnav">
+    <a href="/" class="active">Reach Out</a>
+    <a href="/treadheavyart.html">Home</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/in progress.html">In Progress</a>
+    <a href="/reach out.html"class="active_list">Reach Out</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+   </div>
+  </div>
+
+  <script>
+  function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+    x.className += " responsive";
+   }
+   else {
+    x.className = "topnav";
+   }
+  }
+ </script>
+ <!--end hamburger menu-->
+
+</header>
+
+<section>
+ <form>
+  <label for="name">Name:</label>
+  <input type="text"  id="name" placeholder="Your Name" autofocus>
+
+  <div class="contact">
+   <div class="checkbox">
+    <label for="email-me">Email Me</label>
+    <input class="checkbox" type="checkbox" id="email-me">
+   </div>
+   <div class="email">
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+    <span class="validity"></span>
+
+   </div>
+  </div>
+
+  <div class="contact">
+   <div class="checkbox">
+   <label for="text-me">Text Me</label>
+   <input class="checkbox" type="checkbox" id="text-me">
+
+   <label for="call-me">Call Me</label>
+   <input class="checkbox" type="checkbox" id="call-me">
+
+  </div>
+
+   <div class="phone">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" placeholder="(012)345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <span class="validity"></span>
+   </div>
+  </div>
+
+  <label for="subject">Subject:</label>
+  <input type="text" id="subject">
+
+  <label for="name">Message:</label>
+  <textarea id="name" required></textarea>
+ </form>
+
+
+</body>
+</html>

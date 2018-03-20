@@ -4,7 +4,7 @@ $green: #C8B914;
 $dark-g: #505858;
 $gray: #8B8D8C;
 $light-g: #d3d3d3;
-$red: #A94B6D;
+$red: #810B46;
 
 /* FONT */
 
@@ -68,205 +68,314 @@ strong {
 }
 
 //heading
- .logo {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  a {
+.logo {
+ display: flex;
+ flex-direction: column;
+ width: 28%;
+ a {
   text-decoration: none;
-  }
-   h1 {
-    margin: 2% 0 0 2%;
-    @include font-sans-serif(1.5em,$dark-g );
-    text-align: left;
-    letter-spacing: .1em;
-    font-weight: 600;
-   }
-   h2 {
-    margin-top: 0;
-    color: $red;
-    font-weight: lighter;
-    font-size: 1em;
-    letter-spacing: .06em;
-   }
-
- }
-
- header {
-  width: 90%;
   display: flex;
-  justify-content: space-between;
-  height: 15vh;
-  align-items: center;
+ }
+ h1 {
+  margin: 0 0 0 2%;
+  @include font-sans-serif(1.5em,$green );
+  text-align: left;
+  letter-spacing: .08em;
+  font-weight: 600;
+ }
+ h2 {
+  margin-top: 0;
+  color: $red;
+  font-weight: lighter;
+  font-size: 1em;
+  letter-spacing: .06em;
  }
 
- .nav {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  li{
-   @include font-sans-serif(.8em,$green);
-   font-weight: 400;
-   letter-spacing: .1em;
-   list-style-type: none;
-   a {
-    text-decoration: none;
-    color: $green;
-   }
-   a:hover {
-    text-decoration: bold;
-    color: $red;
-   }
+}
+
+header {
+ width: 90%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 25px 0;
+}
+
+.nav {
+ display: flex;
+ justify-content: space-evenly;
+ width: 65%;
+ padding: 0;
+ li{
+  @include font-sans-serif(.9em,$green);
+  font-weight: 400;
+  letter-spacing: .08em;
+  list-style-type: none;
+  a {
+   text-decoration: none;
+   color: $green;
+  }
+  a:hover {
+   text-decoration: bold;
+   color: $red;
   }
  }
+}
 
- #bootstrap-overrides .navbar-brand {
-  height: auto;
- }
+#bootstrap-overrides .navbar-brand {
+ height: auto;
+}
 
- #bootstrap-overrides .navbar-header {
-  width: 36%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- }
+#bootstrap-overrides .navbar-header {
+ width: 36%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
 
- .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
- }
+.container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
 
- button.navbar-toggle {
-  border: 1px solid $green;
- }
+button.navbar-toggle {
+ border: 1px solid $green;
+}
 
- .icon-bar {
-  background-color: $green;
- }
- //end heading
+.icon-bar {
+ background-color: $green;
+}
 
- .horizontal, .vertical {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  .gallery {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-   overflow: hidden;
-   background-color: black;
-  }
-  img {
-   opacity: .5;
-   height: 100%;
-  }
-  img:hover {
-   opacity: 1;
-  }
- }
-
- .horizontal {
-  .gallery {
-   width: 50%;
-  }
- }
-
- .vertical {
-  .gallery {
-   width: 33.3333333%;
-  }
- }
-
- .vertical.two {
-  .gallery {
-   width: 50%;
-  }
- }
-
- /* Add a black background color to the top navigation */
+/* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
+ background-color: $dark-g;
+ color: #ddd;
+ overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+ font-family: 'source sans pro', serif;
+ float: left;
+ display: block;
+ color: #ddd;
+ text-align: center;
+ padding: 6px 40px 6px 8px;
+ text-decoration: none;
+ font-size: 11px;
 }
 
-/* Change the color of links on hover */
+.topnav .icon a {
+ color: $red;
+ background-color: #ddd;
+}
+/* Change the color of links osn hover */
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+ background-color: #ddd;
+ color: $red;
+}
+.topnav .icon a:hover {
+ background-color: $dark-g;
+ color: #ddd;
 }
 
 /* Add an active class to highlight the current page */
-.active {
-    background-color: #4CAF50;
-    color: white;
+.topnav a.active {
+ background-color: #ddd;
+ color: $red;
+ border-right: 2px solid white;
 }
+.active_list {
+ background-color: $green;
+ color: white;
+}
+
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-    display: none;
+ display: none;
+ width: 10px;
+ padding: 6px 8px;
 }
 
- /*RESPONSIVE*/
+//end heading
 
- @media only screen and (max-width: 768px) {
-  h2.logo {
-   text-align: center;
+.horizontal, .vertical {
+ display: flex;
+ flex-wrap: nowrap;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center;
+ .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+ }
+ img {
+  opacity: .5;
+  height: 100%;
+ }
+ img:hover, img:active, img:focus {
+  opacity: 1;
+ }
+}
+
+.horizontal {
+ .gallery {
+  width: 50%;
+ }
+}
+
+.vertical {
+ .gallery {
+  width: 33.3333333%;
+ }
+}
+
+.vertical.two {
+ .gallery {
+  width: 50%;
+ }
+}
+
+.hamburger_nav {
+ position: absolute;
+ top: 39.5px;
+ right: 10%;
+ z-index: 1;
+
+}
+
+/*REACH OUT*/
+
+.checkbox {
+}
+
+label, input {
+ display: inline;
+ @include font-sans-serif(1em, $dark-g);
+}
+
+lab {
+  margin-top: 15px;
+}
+
+input[type=checkbox] {
+ display: inline;
+
+}
+.checkbox {
+ font-style: italic;
+ font-size: .9em;
+}
+.contact {
+ margin: 15px 0;
+}
+
+input[type=text]{
+ display: inline;
+ width: 98%;
+}
+textarea {
+ display: block;
+ width: 98%;
+ height: 30vh;
+}
+
+input {
+border-color: $light-g;
+border-width: thin;
+
+}
+#phone {
+ color: light-g;
+}
+input:invalid+span:after {
+  position: absolute; content: '✖';
+  padding-left: 5px;
+  color: #8b0000;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 1000px) {
+ .logo {
+  h1 {
+   font-size: 1.3em;
+  }
+  h2 {
+   font-size: .875em;
   }
  }
+}
 
- @media only screen and (max-width: 600px) {
-  .horizontal, .vertical {
-   flex-wrap: wrap;
-   .gallery {
+@media only screen and (max-width: 768px) {
+ h2.logo {
+  text-align: center;
+ }
+ .nav li a {
+  font-size: .775em;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+ .logo {
+  width: 45%;
+ }
+ .horizontal, .vertical {
+  flex-wrap: wrap;
+  .gallery {
+   width: 100%;
+   height: auto;
+   margin: 15px 0 15px 0;
+   img {
     width: 100%;
-    height: auto;
-    margin: 15px 0 15px 0;
-    img {
-     width: 100%;
-    }
    }
   }
-  .topnav a:not(:first-child) {
-   display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {
-   position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-  } 
  }
+ .nav {
+  visibility: collapse;
+ }
+
+ .topnav a:not(:first-child) {
+  display: none;
+ }
+ .topnav a.icon {
+  float: right;
+  display: block;
+ }
+ .topnav.responsive {
+  position: relative;
+ }
+ .topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+ }
+ .topnav.responsive a.active {
+  display: none;
+ }
+ .topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+ }
+}
+
+@media only screen and (max-width: 450px) {
+ .topnav a.active {
+  display: none;
+ }
+ .logo {
+  width: 55%;
+ }
+}
+@media only screen and (min-width: 600px) {
+ .hamburger_nav {
+  display: none;
+ }
+}

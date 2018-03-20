@@ -2,29 +2,56 @@
 <html>
 <head>
  <meta charset="utf-8">
- <title>Tread Heavy </title>
+ <title>Tread Heavy Art</title>
  <link rel="stylesheet" href="styles/styles.css">
  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
 
+ <script src="js/script.js"></script>
+
 </head>
 
- <body>
+<body>
 
-  <header>
-   <div class="logo">
-    <a href="treadheavyart.html" class="logo">
-    <h1>Tread Heavy Art</h1>
-    <h2><i>artwork by </i><strong>lauren dupuis</strong></h2>
+ <header>
+  <div class="logo">
+   <a href="treadheavyart.html"><h1>Tread Heavy Art</h1></a>
+   <a href="treadheavyart.html"><h2><i>artwork by </i><strong>lauren dupuis</strong></h2>
    </a>
   </div>
-   <ul class="nav">
-    <li><a href="treadheavyart.html">tread heavy</a></li>
-    <li><a href="gallery.html">gallery</a></li>
-    <li><a href="in progress.html">in progress</a></li>
-    <li><a href="reach out.html">reach out</a></li>
-   </ul>
-  </header>
+  <ul class="nav">
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/treadheavyart.html">tread heavy</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/gallery.html">gallery</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/in progress.html">in progress</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/reach out.html">reach out</a></li>
+  </ul>
+
+  <!--hamburger menu-->
+  <div class="hamburger_nav">
+  <div class="topnav" id="myTopnav">
+   <a href="/" class="active">In Progress</a>
+   <a href="/treadheavyart.html">Home</a>
+   <a href="/gallery.html">Gallery</a>
+   <a href="/in progress.html"class="active_list">In Progress</a>
+   <a href="/reach out.html">Reach Out</a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+ </div>
+
+  <script>
+  function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+    x.className += " responsive";
+   }
+   else {
+    x.className = "topnav";
+   }
+  }
+ </script>
+ <!--end hamburger menu-->
+
+</header>
 
  <section>
 

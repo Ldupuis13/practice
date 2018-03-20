@@ -1,4 +1,4 @@
-[<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
  <meta charset="utf-8">
@@ -7,94 +7,107 @@
  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
 
+ <script src="js/script.js"></script>
+
 </head>
 
 <body>
 
  <header>
   <div class="logo">
-   <a href="treadheavyart.html" class="logo">
-    <h1>Tread Heavy Art</h1>
-    <h2><i>artwork by </i><strong>lauren dupuis</strong></h2>
-   </a>
+  <a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/treadheavyart.html"><img src="images/logo_g_p.png"></a>
   </div>
   <ul class="nav">
-   <li><a href="treadheavyart.html">tread heavy</a></li>
-   <li><a href="gallery.html">gallery</a></li>
-   <li><a href="in progress.html">in progress</a></li>
-   <li><a href="reach out.html">reach out</a></li>
-
-<!--hamburger menu-->
-   <script>
-    <div class="topnav" id="myTopnav">
-     <a href="#home" class="active">Home</a>
-     <a href="#news">News</a>
-     <a href="#contact">Contact</a>
-     <a href="#about">About</a>
-     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-   </script>
-
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/treadheavyart.html">tread heavy</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/gallery.html">gallery</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/in progress.html">in progress</a></li>
+   <li><a href="/Users/Lou/Documents/GitHub/pages/assignments/tread-heavy/reach out.html">reach out</a></li>
   </ul>
- </header>
 
- <section>
+  <!--hamburger menu-->
+  <div class="hamburger_nav">
+  <div class="topnav" id="myTopnav">
+   <a href="/" class="active">Gallery</a>
+   <a href="/treadheavyart.html">Home</a>
+   <a href="/gallery.html"class="active_list">Gallery</a>
+   <a href="/in progress.html">In Progress</a>
+   <a href="/reach out.html">Reach Out</a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+ </div>
 
-  <div class="horizontal">
+  <script>
+  function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+    x.className += " responsive";
+   }
+   else {
+    x.className = "topnav";
+   }
+  }
+ </script>
+ <!--end hamburger menu-->
 
-   <div class="gallery art tear">
-    <img class="landscape" src="images/tear_thumbnail.png">
-   </div>
-   <div class="gallery art raiden">
-    <img class="landscape" src="images/raiden_thumbnail.png">
-   </div>
+</header>
 
+<section>
+
+ <div class="horizontal">
+
+  <div class="gallery art tear">
+   <img class="landscape" src="images/tear_thumbnail.png">
+  </div>
+  <div class="gallery art raiden">
+   <img class="landscape" src="images/raiden_thumbnail.png">
   </div>
 
-  <div class="horizontal">
+ </div>
 
-   <div class="gallery art white_walker">
-    <img class="landscape" src="images/white_walker_thumbnail.png">
-   </div>
-   <div class="gallery art ducklings">
-    <img class="landscape" src="images/ducklings_thumbnail.png">
-   </div>
+ <div class="horizontal">
 
+  <div class="gallery art white_walker">
+   <img class="landscape" src="images/white_walker_thumbnail.png">
+  </div>
+  <div class="gallery art ducklings">
+   <img class="landscape" src="images/ducklings_thumbnail.png">
   </div>
 
-  <div class="vertical">
+ </div>
 
-   <div class="gallery art split_face">
-    <img src="images/split_face.jpg">
-   </div>
+ <div class="vertical">
 
-   <div class="gallery art cheetah_family">
-    <img src="images/cheetah_family_thumbnail.png">
-   </div>
-
-   <div class="gallery art dreamcatching">
-    <img src="images/dreamcatching_thumbnail.png">
-   </div>
-
+  <div class="gallery art split_face">
+   <img src="images/split_face.jpg">
   </div>
 
-  <div class="vertical">
-
-   <div class="gallery art peace">
-    <img src="images/peace_thumbnail.png">
-   </div>
-
-   <div class="gallery art sing_newburyport">
-    <img src="images/sing_newburyport_thumbnail.png">
-   </div>
-
-   <div class="gallery art tyson">
-    <img src="images/tyson_thumbnail.png">
-   </div>
-
+  <div class="gallery art cheetah_family">
+   <img src="images/cheetah_family_thumbnail.png">
   </div>
 
- </section>
+  <div class="gallery art dreamcatching">
+   <img src="images/dreamcatching_thumbnail.png">
+  </div>
+
+ </div>
+
+ <div class="vertical">
+
+  <div class="gallery art peace">
+   <img src="images/peace_thumbnail.png">
+  </div>
+
+  <div class="gallery art sing_newburyport">
+   <img src="images/sing_newburyport_thumbnail.png">
+  </div>
+
+  <div class="gallery art tyson">
+   <img src="images/tyson_thumbnail.png">
+  </div>
+
+ </div>
+
+</section>
 
 </body>
 </html>
