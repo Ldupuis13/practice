@@ -193,28 +193,24 @@ button.navbar-toggle {
   z-index: 1; }
 
 /*REACH OUT*/
+form {
+  background-color: white;
+  padding: 5px;
+  position: static; }
+
 label, input {
   display: inline;
   font-family: 'Source Sans Pro', serif;
-  color: #505858;
+  color: #d3d3d3;
   font-size: 1em; }
-
-lab {
-  margin-top: 15px; }
-
-input[type=checkbox] {
-  display: inline; }
-
-.checkbox {
-  font-style: italic;
-  font-size: .9em; }
 
 .contact {
   margin: 15px 0; }
 
-input[type=text] {
+#name, #email, #phone, #subject, #message {
   display: inline;
-  width: 98%; }
+  flex-grow: 1;
+  border: 1px solid #ccc; }
 
 textarea {
   display: block;
@@ -222,11 +218,28 @@ textarea {
   height: 30vh; }
 
 input {
-  border-color: #d3d3d3;
-  border-width: thin; }
+  margin-bottom: 10px; }
+  input[type="checkbox"] {
+    display: inline;
+    width: 10px;
+    margin: 0; }
 
-#phone {
-  color: light-g; }
+.checkbox {
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column; }
+
+.line, .check-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .line label, .check-line label {
+    font-size: .7em;
+    font-weight: 400;
+    letter-spacing: .04em;
+    color: #810B46; }
 
 input:invalid + span:after {
   position: absolute;

@@ -252,34 +252,32 @@ button.navbar-toggle {
 
 /*REACH OUT*/
 
-.checkbox {
+form {
+background-color: white;
+padding: 5px;
+position: static;
 }
+
 
 label, input {
  display: inline;
- @include font-sans-serif(1em, $dark-g);
+ @include font-sans-serif(1em, $light-g);
 }
 
-lab {
-  margin-top: 15px;
-}
 
-input[type=checkbox] {
- display: inline;
 
-}
-.checkbox {
- font-style: italic;
- font-size: .9em;
-}
+
+
 .contact {
  margin: 15px 0;
 }
 
-input[type=text]{
- display: inline;
- width: 98%;
+#name, #email, #phone, #subject, #message{
+  display: inline;
+  flex-grow: 1;
+  border: 1px solid #ccc;
 }
+
 textarea {
  display: block;
  width: 98%;
@@ -287,13 +285,33 @@ textarea {
 }
 
 input {
-border-color: $light-g;
-border-width: thin;
+ margin-bottom: 10px;
+ &[type="checkbox"] {
+    display: inline;
+    width: 10px;
+    margin: 0;
+ }
+}
 
+.checkbox {
+ width: 14%;
+ display: flex;
+ justify-content: center;
+ align-items: stretch;
+ flex-direction: column;
 }
-#phone {
- color: light-g;
+.line, .check-line {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ label {
+ font-size: .7em;
+ font-weight: 400;
+ letter-spacing: .04em;
+ color: $red;
+ }
 }
+
 input:invalid+span:after {
   position: absolute; content: '✖';
   padding-left: 5px;
