@@ -55,39 +55,39 @@
 <section>
  <form>
   <div class="group">
-   <label for="name">Name:</label>
+   <label for="name" aria-label="Name">Name:</label>
    <input type="text" id="name" placeholder="First and Last Name" required autofocus>
   </div>
   <div class="group">
    <div class="check">
-    <label for="check email">Email Me</label>
+    <label for="check email" aria-label="Email Me">Email Me</label>
     <input type="checkbox" id="check email">
    </div>
 
-   <label for="email">Email Address:</label>
+   <label for="email" aria-label="Email Address">Email Address:</label>
    <input type="email" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
    <span class="validity"></span>
   </div>
 
   <div class="group">
    <div class="check">
-    <label for="check text">Text Me</label>
+    <label for="check text" aria-label="Text Me">Text Me</label>
     <input type="checkbox" id="check text">
    </div>
    <div class="check">
-    <label for="check call">Call Me</label>
+    <label for="check call" aria-label="Call Me">Call Me</label>
     <input type="checkbox" id="check call">
    </div>
 
-   <label for="phone">Phone Number</label>
+   <label for="phone" aria-label="Phone Number">Phone Number</label>
    <input type="tel" id="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
    <span class="validity"></span>
   </div>
 
-  <label for="message">Questions or Comments:</label>
+  <label for="message" aria-label="Questions or Comments">Questions or Comments:</label>
   <textarea id="message" required></textarea>
 
-  <button type="submit">Submit</button>
+  <button type="submit" aria-label="Submit">Submit</button>
 
  </form>
 </section>
