@@ -1,0 +1,159 @@
+<label for="firstname">First name:</label>
+<input type="text" name="firstname" id="firstname">
+
+HTML form
+ section of a document containing:
+  1. normal content
+  2. markup
+  3. "controls" - elements such as checkboxes, radio buttons, menus, etc.
+  4. labels on those "controls"
+
+form control
+  control that serves as a point of user interaction
+
+label
+  associates text w/ form elements (First Name:)
+
+  identify a form control within the code
+
+for
+  attribute of label that must exactly match the id of the form control
+
+id
+  must exactly match the "for" of the label
+
+HIDING
+
+visuallyhidden
+<label for="search" class="visuallyhidden">Search: </label>
+<input type="text" name="search" id="search">
+<button type="submit">Search</button>
+  - hides the label
+
+aria-label
+<input type="text" name="search" aria-label="Search">
+<button type="submit">Search</button>
+  - supported by screen readers and other assistive technology
+  - not conveyed to visual users
+
+aria-labelledby
+<input type="text" name="search" aria-labelledby="searchbutton">
+<button id="searchbutton" type="submit">Search</button>
+  - supported by screen readers and other assistive technology
+  - not conveyed to visual users
+  - * value of the "aria-labelledby" attribute is the "id" of the element containing the label text (button)*
+
+title
+<input title="Search" type="text" name="search">
+<button type="submit">Search</button>
+  - generally less reliable and not recommended
+  - some screen readers & assistive technologies don't interpret "title" as  replacement for "label" element
+  - shown to visual users as a tool tip when hovering over the form field with the mouse
+
+
+  hide information visually & keep available to screen reader & assistive technology users:
+  use CSS that will keep the information technically visible but practically hidden
+  present "label" in a 1-by-1 pixel area w/ a 1-pixel margin,
+  do not confuse with CSS visibility: hidden
+
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+<button>
+* <button type="submit">Submit</button> *
+* <button type="button">Cancel</button> *
+
+<input type="submit" value="Submit">
+<input type="button" value="Cancel">
+
+  "label" of "button" element is set inside & can include markup
+  allows more advanced accessibility hints (like marking up language change)
+  when using "input" to create buttons, label is set in "value" attribute of element
+
+ATTRIBUTES
+
+type
+  button
+  checkbox
+  color
+  date
+  datetime-local
+  email
+  file
+  hidden
+  image
+  month
+  number
+  password
+  radio
+  range
+  reset
+  search
+  submit
+  tel
+  text
+  time
+  url
+  week
+
+name
+  Specifies a name for the element
+
+type
+  Specifies the type of button
+
+value
+  Specifies an initial value for the button
+
+autofocus (autofocus)
+  Specifies that a button should automatically get focus when the page loads
+
+disabled (disabled)
+  Specifies that a button should be disabled
+
+  alt
+    Specifies an alternate text for images (only for type="image")
+
+  autocomplete (on/off)
+    Specifies whether an <input> element should have autocomplete enabled
+
+  checked (checked)
+    Specifies that an <input> element should be pre-selected when the page loads (for type="checkbox" or type="radio")
+
+  list (datalist_id)
+    Refers to a <datalist> element that contains pre-defined options for an <input> element
+
+  max (number/date)
+    Specifies the maximum value for an <input> element
+
+  maxlength (number)
+    Specifies the maximum number of characters allowed in an <input> element
+
+  min (number/date)
+    Specifies a minimum value for an <input> element
+
+  multiple (multiple)
+    Specifies that a user can enter more than one value in an <input> element
+
+  pattern
+    Specifies a regular expression that an <input> element's value is checked against
+
+  placeholder
+    Specifies a short hint that describes the expected value of an <input> element
+
+  required
+    Specifies that an input field must be filled out before submitting the form
+
+  step
+    Specifies the legal number intervals for an input field
+
+  size (number)
+    Specifies the width, in characters, of an <input> element
