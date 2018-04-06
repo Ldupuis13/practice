@@ -1,0 +1,44 @@
+
+<form>
+ <div class="line">
+  <label for="name">Name:</label>
+  <input type="text"  id="name" placeholder="Your Name" autofocus>
+ </div>
+
+ <div class="line">
+ <div class="checkbox">
+      <label for="email-me">Email Me</label>
+   <input class="checkbox" type="checkbox" id="email-me">
+  </div>
+  <input type="text" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+  <span class="validity"></span>
+ </div>
+
+ <div class="line">
+   <div class="checkbox">
+    <div class="check-line">
+    <label for="text-me">Text Me</label>
+    <input class="checkbox" type="checkbox" id="text-me">
+   </div>
+
+    <div class="check-line">
+    <label for="call-me">Call Me</label>
+    <input class="checkbox" type="checkbox" id="call-me">
+   </div>
+  </div>
+ </div>
+
+  <input type="tel" id="phone" placeholder="(012)345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+  <span class="validity"></span>
+
+
+ <div class="line">
+  <label for="subject">Subject:</label>
+  <input type="text" id="subject">
+ </div>
+ <div class="line">
+  <label for="message">Message:</label>
+  <textarea id="message" required></textarea>
+ </div>
+
+</form>

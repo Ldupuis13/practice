@@ -1,0 +1,272 @@
+[<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <script src="js/script.js"></script>
+ <title>Tread Heavy Art</title>
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
+ <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="node_modules/primer-css/build/build.css">
+ <link rel="stylesheet" href="node_modules/octicons/build/font/octicons.css">
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ <!-- Optional theme -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+ <!-- Latest compiled and minified JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<section class="one">
+<form>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 form-control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 form-control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2">Radios</label>
+    <div class="col-sm-10">
+      <div class="radio">
+        <label>
+          <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+          Option three is disabled
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2">Checkbox</label>
+    <div class="col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-secondary">Sign in</button>
+    </div>
+  </div>
+</form>
+
+<small class="text-muted">
+  Some inline text with a small tag looks like this.
+</small>
+
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" value="" disabled>
+    Option two is disabled
+  </label>
+</div>
+
+<div class="checkbox">
+  <label>
+    <input type="checkbox" id="blankCheckbox" value="option1">
+  </label>
+</div>
+
+<div class="row">
+  <div class="col-xs-2">
+    <input type="text" class="form-control" placeholder=".col-xs-2">
+  </div>
+  <div class="col-xs-3">
+    <input type="text" class="form-control" placeholder=".col-xs-3">
+  </div>
+  <div class="col-xs-4">
+    <input type="text" class="form-control" placeholder=".col-xs-4">
+  </div>
+</div>
+
+<div class="c-inputs-stacked">
+  <label class="c-input c-radio">
+    <input id="radioStacked1" name="radio-stacked" type="radio">
+    <span class="c-indicator"></span>
+    Toggle this custom radio
+  </label>
+  <label class="c-input c-radio">
+    <input id="radioStacked2" name="radio-stacked" type="radio">
+    <span class="c-indicator"></span>
+    Or toggle this other custom radio
+  </label>
+</div>
+
+<form>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+  </fieldset>
+</form>
+
+
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+  </div>
+  <button type="submit" class="btn btn-primary">Send invitation</button>
+</form>
+
+
+<input class="form-control form-control-lg" type="text" placeholder=".input-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control form-control-sm" type="text" placeholder=".input-sm">
+
+<label class="file">
+  <input type="file" id="file">
+  <span class="file-custom"></span>
+</label>
+
+<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+
+
+<div class="form-group has-success">
+  <label class="control-label" for="inputSuccess1">Input with success</label>
+  <input type="text" class="form-control form-control-success" id="inputSuccess1">
+</div>
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning1">Input with warning</label>
+  <input type="text" class="form-control form-control-warning" id="inputWarning1">
+</div>
+<div class="form-group has-error">
+  <label class="control-label" for="inputError1">Input with error</label>
+  <input type="text" class="form-control form-control-error" id="inputError1">
+</div>
+
+<div class="has-success">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxSuccess" value="option1">
+      Checkbox with success
+    </label>
+  </div>
+</div>
+<div class="has-warning">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxWarning" value="option1">
+      Checkbox with warning
+    </label>
+  </div>
+</div>
+<div class="has-error">
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" id="checkboxError" value="option1">
+      Checkbox with error
+    </label>
+  </div>
+</div>
+
+<select class="form-control form-control-lg"></select>
+<select class="form-control"></select>
+<select class="form-control form-control-sm"></select>
+
+<select class="c-select">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<form>
+  <fieldset class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    <small class="text-muted">We'll never share your email with anyone else.</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleSelect1">Example select</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleTextarea">Example textarea</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" class="form-control-file" id="exampleInputFile">
+    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+  </fieldset>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+      Option one is this and that&mdash;be sure to include why it's great
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+      Option two can be something else and selecting it will deselect option one
+    </label>
+  </div>
+  <div class="radio disabled">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+      Option three is disabled
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</section>

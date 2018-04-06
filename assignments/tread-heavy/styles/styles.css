@@ -198,11 +198,22 @@ form {
   padding: 5px;
   position: static; }
 
-label, input {
+label {
+  font-family: 'Source Sans Pro', serif;
+  color: #810B46;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: .05em; }
+
+input {
   display: inline;
   font-family: 'Source Sans Pro', serif;
-  color: #d3d3d3;
+  color: #505858;
   font-size: 1em; }
+  input[type="checkbox"] {
+    display: inline;
+    width: 10px;
+    margin: 0; }
 
 .contact {
   margin: 15px 0; }
@@ -217,12 +228,8 @@ textarea {
   width: 98%;
   height: 30vh; }
 
-input {
-  margin-bottom: 10px; }
-  input[type="checkbox"] {
-    display: inline;
-    width: 10px;
-    margin: 0; }
+.group {
+  margin-bottom: 25px; }
 
 .checkbox {
   width: 14%;
@@ -246,6 +253,10 @@ input:invalid + span:after {
   content: '✖';
   padding-left: 5px;
   color: #8b0000; }
+
+input:focus + span:after {
+  position: absolute;
+  content: ''; }
 
 /*RESPONSIVE*/
 @media only screen and (max-width: 1000px) {
