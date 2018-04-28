@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <script src="js/script.js"></script>
+ <title>Tread Heavy Art</title>
+ <link rel="stylesheet" href="styles/styles.css">
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Source+Sans+Pro:200,300,300i,400,400i,600,700,900" rel="stylesheet">
+ <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="node_modules/primer-css/build/build.css">
+ <link rel="stylesheet" href="node_modules/octicons/build/font/octicons.css">
+</head>
+
+<body>
+
+ <header>
+  <div class="logo">
+   <a href="https://ldupuis13.github.io/tread-heavy-art/assignments/tread-heavy/treadheavyart.html"><img src="images/logo_g_p.png"></a>
+  </div>
+  <ul class="nav">
+   <li><a href="/tread-heavy-art/assignments/tread-heavy/treadheavyart.html">tread heavy</a></li>
+   <li><a href="/tread-heavy-art/assignments/tread-heavy/gallery.html">gallery</a></li>
+   <li><a href="/tread-heavy-art/assignments/tread-heavy/in progress.html">in progress</a></li>
+   <li><a href="/tread-heavy-art/assignments/tread-heavy/reach_out.html">reach out</a></li>
+  </ul>
+
+  <!--hamburger menu-->
+  <div class="hamburger_nav">
+  <div class="topnav" id="myTopnav">
+   <a href="/tread-heavy-art/assignments/tread-heavy/gallery.html" class="active">Gallery</a>
+   <a href="/tread-heavy-art/assignments/tread-heavy/treadheavyart.html">Home</a>
+   <a href="/tread-heavy-art/assignments/tread-heavy/gallery.html"class="active_list">Gallery</a>
+   <a href="/tread-heavy-art/assignments/tread-heavy/in progress.html">In Progress</a>
+   <a href="/tread-heavy-art/assignments/tread-heavy/reach out.html">Reach Out</a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  </div>
+
+  <script>
+  function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+    x.className += " responsive";
+   }
+   else {
+    x.className = "topnav";
+   }
+  }
+ </script>
+ <!--end hamburger menu-->
+
+</header>
+
+<section>
+ <form>
+  <div class="group">
+   <label for="name" aria-label="Name">Name:</label>
+   <input type="text" id="name" placeholder="First and Last Name" required autofocus>
+  </div>
+  <div class="group">
+   <div class="check">
+    <label for="check email" aria-label="Email Me">Email Me</label>
+    <input type="checkbox" id="check email">
+   </div>
+
+   <label for="email" aria-label="Email Address">Email Address:</label>
+   <input type="email" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+   <span class="validity"></span>
+  </div>
+
+  <div class="group">
+   <div class="check">
+    <label for="check text" aria-label="Text Me">Text Me</label>
+    <input type="checkbox" id="check text">
+   </div>
+   <div class="check">
+    <label for="check call" aria-label="Call Me">Call Me</label>
+    <input type="checkbox" id="check call">
+   </div>
+
+   <label for="phone" aria-label="Phone Number">Phone Number</label>
+   <input type="tel" id="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+   <span class="validity"></span>
+  </div>
+
+  <label for="message" aria-label="Questions or Comments">Questions or Comments:</label>
+  <textarea id="message" required></textarea>
+
+  <button type="submit" aria-label="Submit">Submit</button>
+
+ </form>
+</section>
+
+</body>
+</html>
