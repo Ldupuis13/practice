@@ -401,3 +401,18 @@ input:focus+span:after {
   display: none;
  }
 }
+
+
+
+
+
+
+.horizontal1, .vertical1 {
+ display: flex;
+ flex: 50%;
+ flex-wrap: wrap;
+}
+
+.vertical1 {
+ flex: 33.3333%;
+}
