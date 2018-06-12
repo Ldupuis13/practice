@@ -72,6 +72,10 @@ strong {
  display: flex;
  flex-direction: column;
  width: 28%;
+ a {
+  text-decoration: none;
+  display: flex;
+ }
  h1 {
   margin: 0 0 0 2%;
   @include font-sans-serif(1.5em,$green );
@@ -150,10 +154,6 @@ button.navbar-toggle {
  overflow: hidden;
 }
 
-img {
- width: 100%;
-}
-
 /* Style the links inside the navigation bar */
 .topnav a {
  font-family: 'source sans pro', serif;
@@ -206,7 +206,27 @@ img {
 
 .grid-container {
  display: grid;
+ grid-template-columns: 25%;
+ grid-template-rows: 100%;
+ overflow: hidden;
 }
+
+.grid-item-horizontal .grid-item-vertical {
+ place-self: center;
+ }
+
+
+.grid-item-horizontal {
+   grid-column-start: auto 2;
+   align-self: stretch;
+   }
+
+.grid-item-vertical {
+ grid-column-start: auto 1;
+ align-self: stretch;
+}
+
+
 .horizontal, .vertical {
  display: flex;
  flex-wrap: nowrap;
@@ -356,17 +376,7 @@ input:focus+span:after {
  .logo {
   width: 45%;
  }
- .horizontal, .vertical {
-  flex-wrap: wrap;
-  .gallery {
-   width: 100%;
-   height: auto;
-   margin: 15px 0 15px 0;
-   img {
-    width: 100%;
-   }
-  }
- }
+
  .nav {
   visibility: collapse;
  }
@@ -409,19 +419,4 @@ input:focus+span:after {
  .hamburger_nav {
   display: none;
  }
-}
-
-
-
-
-
-
-.horizontal1, .vertical1 {
- display: flex;
- flex: 50%;
- flex-wrap: wrap;
-}
-
-.vertical1 {
- flex: 33.3333%;
 }
