@@ -17,7 +17,7 @@ $red: #810B46;
 
 //@include font-sans-serif(,)
 @mixin font-sans-serif($x,$color:#d3d3d3) {
- font-family: 'Source Sans Pro', serif;
+ font-family: 'Roboto Mono', monospace;
  color: $color;
  font-size: $x;
 }
@@ -72,10 +72,6 @@ strong {
  display: flex;
  flex-direction: column;
  width: 28%;
- a {
-  text-decoration: none;
-  display: flex;
- }
  h1 {
   margin: 0 0 0 2%;
   @include font-sans-serif(1.5em,$green );
@@ -152,6 +148,11 @@ button.navbar-toggle {
  background-color: $dark-g;
  color: #ddd;
  overflow: hidden;
+
+}
+
+img {
+ width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -200,7 +201,6 @@ button.navbar-toggle {
 }
 
 //end heading
-
 
 //GALLERY
 img {
@@ -413,4 +413,19 @@ input:focus+span:after {
  .hamburger_nav {
   display: none;
  }
+}
+
+
+
+
+
+
+.horizontal1, .vertical1 {
+ display: flex;
+ flex: 50%;
+ flex-wrap: wrap;
+}
+
+.vertical1 {
+ flex: 33.3333%;
 }

@@ -1,0 +1,15 @@
+/*
+	Comment
+*/
+
+a { /* Comment */ color: /* Comment */ Red; }
+h1 {
+	font-family:	'Linotype Gianotten', serif;
+		color: Black;
+	background-color: White;
+	text-align: left;
+}
+
+h2 {
+	font-family: 'Monotype News Gothic';
+}

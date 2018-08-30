@@ -1,0 +1,35 @@
+/* COLORS */
+
+$green: #C8B914;
+$dark-g: #505858;
+$gray: #8B8D8C;
+$light-g: #d3d3d3;
+$red: #810B46;
+
+/* FONT */
+
+//@include font-serif(,)
+@mixin font-serif($x,$color:#d3d3d3) {
+ font-family: 'Calluna', serif;
+ color: $color;
+ font-size: $x;
+}
+
+//@include font-sans-serif(,)
+@mixin font-sans-serif($x,$color:#d3d3d3) {
+ font-family: 'Roboto Mono', monospace;
+ color: $color;
+ font-size: $x;
+}
+
+//Page
+body{
+ width: 100%;
+ height: auto;
+ background-color: #fafafa;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
