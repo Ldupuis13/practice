@@ -1,0 +1,239 @@
+/* COLORS */
+/* FONT */
+body {
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 62.5%; }
+
+.full {
+  width: 100%;
+  overflow: hidden;
+  background: #fafafa; }
+
+header {
+  background: #fafafa;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: baseline; }
+
+.logo_home {
+  width: 25%;
+  height: auto;
+  margin-right: 10%; }
+
+.logo {
+  width: 100%;
+  margin: 5%; }
+
+ul.nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  align-items: center; }
+  ul.nav li {
+    font-family: 'Roboto', sans-serif;
+    color: #5c5c5c;
+    font-size: 1.6em;
+    font-variant: small-caps;
+    letter-spacing: .2em;
+    list-style-type: none; }
+
+.home_focal_background {
+  height: 60vh;
+  background: black;
+  overflow: hidden;
+  z-index: -1; }
+
+.home_img_overlay {
+  height: 100%;
+  top: 0;
+  opacity: .8; }
+
+img {
+  width: 100%; }
+  img .home_focal {
+    min-height: 370px; }
+
+.listings {
+  font-family: 'Roboto Slab', serif;
+  color: #092043;
+  font-size: 2.5em;
+  letter-spacing: .07em;
+  list-style-type: none; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #7c7979;
+  font-size: 1.4em;
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.4em; }
+
+li {
+  font-family: 'Roboto', sans-serif;
+  color: #7c7979;
+  font-size: 1.4em;
+  margin-top: 5%;
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.6em;
+  list-style-type: disc; }
+
+.listings_3 {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.listing_description h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #D3D3D3;
+  font-size: 5em;
+  letter-spacing: .2em;
+  margin: 3% 48% 4%;
+  text-align: right;
+  width: 50%; }
+
+.description {
+  width: 50%;
+  margin: 20px; }
+
+.property_imgs {
+  width: 100%;
+  display: flex;
+  margin: 0 auto; }
+
+figure {
+  width: 50%; }
+
+/* COLORS */
+/* FONT */
+body {
+  width: 100%;
+  height: auto;
+  background-color: #fafafa;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 62.5%; }
+
+.full {
+  width: 100%;
+  overflow: hidden;
+  background: #fafafa; }
+
+header {
+  background: #fafafa;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: baseline; }
+
+.logo_home {
+  width: 219;
+  height: auto;
+  margin-right: 10%; }
+
+.logo {
+  width: 100%;
+  margin: 5%; }
+
+ul.nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  align-items: center; }
+
+ul.nav li {
+  font-family: 'Roboto', sans-serif;
+  color: #5c5c5c;
+  font-size: 1.6em;
+  font-variant: small-caps;
+  letter-spacing: .2em;
+  list-style-type: none; }
+
+.home_focal_background {
+  height: 100%;
+  background: black;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+
+.home_img_overlay {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: .6;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+img {
+  display: inline-block; }
+  img .home_focal {
+    height: 100%;
+    width: auto; }
+
+.listings {
+  font-family: 'Roboto Slab', serif;
+  color: #5c5c5c;
+  font-size: 3.2em;
+  letter-spacing: .1em;
+  margin: 3% 1% 4%;
+  text-align: left;
+  width: 50%; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #7c7979;
+  font-size: 1.4em;
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.4em;
+  width: 53%;
+  margin-right: 7%;
+  text-align: justify; }
+
+li {
+  font-family: 'Roboto', sans-serif;
+  color: #7c7979;
+  font-size: 1.4em;
+  margin-top: 5%;
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.6em;
+  list-style-type: disc; }
+
+.listings_3 {
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: unset; }
+  .listings_3 .listing_description {
+    width: 90%; }
+
+.description {
+  width: 50%;
+  margin: 20px; }
+
+section.Interior, section.amenities {
+  width: 30%;
+  margin: 0 2%; }
+
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styles2.css.map */

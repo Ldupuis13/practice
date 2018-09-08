@@ -1,0 +1,304 @@
+/* COLORS */
+$background: #fafafa;
+$dark-b: #092043;
+$gray: #8B8D8C;
+$font-dark: #5c5c5c;
+
+//font-family:"Bodoni W01 Poster691960";
+//font-family:"BodoniW01-PosterItalic";
+//font-family:"BodoniW01-PosterCompres";
+//font-family:"Frutiger Neue W01 UltLt";
+//font-family:"FrutigerNeueW01-UltLtIt";
+//font-family:"Frutiger Neue W01 Thin";
+//font-family:"FrutigerNeueW01-ThinIt";
+//font-family:"Frutiger Neue W01 Light";
+//font-family:"FrutigerNeueW01-LightIt";
+//font-family:"FrutigerNeueW01-Regular";
+//font-family:"Frutiger Neue W01 It";
+//font-family:"Frutiger Neue W01 Md";
+//font-family:"Frutiger Neue W01 Md It";
+//font-family:"Frutiger Neue W01 Bd";
+//font-family:"Frutiger Neue W01 Bd It";
+//font-family:"Frutiger Neue W01 Heavy";
+//font-family:"FrutigerNeueW01-HeavyIt";
+//font-family:"Frutiger Neue W01 Blk";
+//font-family:"FrutigerNeueW01-BlkIt";
+//font-family: 'Crimson Text', serif;
+//font-family: 'Roboto', sans-serif;
+//font-family: 'Roboto Slab', serif;
+
+/* FONT */
+
+//@include font-serif(,)
+@mixin font-serif($x,$color:#5c5c5c) {
+  font-family: 'Roboto Slab', serif;
+  color: $color;
+  font-size: $x;
+}
+
+//@include font-sans-serif(,)
+@mixin font-sans-serif($size:1.4em,$color:#7c7979) {
+  font-family: 'Roboto', sans-serif;
+  color: $color;
+  font-size: $size;
+}
+
+//Page
+body{
+  width: 100%;
+  height: auto;
+  background-color: $background;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size:62.5%;
+}
+
+.full {
+  width: 100%;
+  overflow: hidden;
+  background: $background;
+}
+
+header {
+  background: $background;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+}
+
+
+
+.home_img_overlay {
+  height: 100%;
+  top: 0;
+  opacity: .8;
+}
+
+img {
+  width: 100%;
+  .home_focal {
+    min-height: 370px;
+  }
+}
+
+.listings{
+  @include font-serif(2.5em,#092043);
+  letter-spacing: .07em;
+  list-style-type: none;
+
+}
+
+h1 {
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+  @include font-sans-serif(1.4em,#7c7979);
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+li {
+  @include font-sans-serif(1.4em,#7c7979);
+  margin-top: 5%;
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.6em;
+  list-style-type: disc;
+}
+
+
+.listings_3 {
+  width: 90%;
+  margin: 30px auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.listing_description h1{
+  @include font-serif(5em,#D3D3D3);
+  letter-spacing: .2em;
+  margin: 3% 48% 4%;
+  text-align: right;
+  width: 50%;
+
+}
+.description {
+  width: 50%;
+  margin: 20px;
+}
+
+
+.property_imgs {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+figure {
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* COLORS */
+/* FONT */
+body {
+  width: 100%;
+  height: auto;
+  background-color: $background;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 62.5%;
+}
+
+.full {
+  width: 100%;
+  overflow: hidden;
+  background: $background;
+}
+
+header {
+  background: $background;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+}
+
+.logo_home {
+  width: 19%;
+  height: auto;
+  margin-right: 10%;
+}
+
+.logo {
+  width: 100%;
+  margin: 5%;
+}
+
+ul.nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  align-items: center;
+  li {
+    @include font-sans-serif(1.6em);
+    font-variant: small-caps;
+    letter-spacing: .2em;
+    list-style-type: none;
+  }
+}
+
+.home_focal_background {
+  height: 100%;
+  background: black;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.home_img_overlay {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: .6;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: inline-block;
+  .home_focal {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.listings {
+  font-family: 'Roboto Slab', serif;
+  color: $font-dark;
+  font-size: 3.2em;
+  letter-spacing: .1em;
+  margin: 3% 1% 4%;
+  text-align: left;
+  width: 50%;
+}
+
+p {
+  @include font-sans-serif();
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.4em;
+  width: 53%;
+  margin-right: 7%;
+  text-align: justify;
+}
+
+li {
+  @include font-sans-serif();
+  margin-top: 5%;
+  letter-spacing: .05em;
+  font-weight: 300;
+  line-height: 1.6em;
+  list-style-type: disc;
+}
+
+.listings_3 {
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  .listing_description {
+    width: 90%;
+
+  }
+}
+
+.description {
+  width: 50%;
+  margin: 20px;
+}
+
+
+section.Interior, section.amenities {
+  width: 30%;
+  margin: 0 2%;
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */

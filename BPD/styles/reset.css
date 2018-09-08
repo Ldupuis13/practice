@@ -1,5 +1,5 @@
 html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, a, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
@@ -14,9 +14,10 @@ time, mark, audio, video {
  padding:0;
  border:0;
  outline:0;
- font-size:100%;
  vertical-align:baseline;
  background:transparent;
+ color: #5c5c5c;
+ text-decoration: none;
 }
 
 body {
@@ -45,7 +46,6 @@ q:before, q:after {
 a {
  margin:0;
  padding:0;
- font-size:100%;
  vertical-align:baseline;
  background:transparent;
 }
@@ -92,3 +92,23 @@ hr {
 input, select {
  vertical-align:middle;
 }
+
+
+font-family:"BodoniW01-PosterItalic";
+font-family:"BodoniW01-PosterCompres";
+font-family:"Frutiger Neue W01 UltLt";
+font-family:"FrutigerNeueW01-UltLtIt";
+font-family:"Frutiger Neue W01 Thin";
+font-family:"FrutigerNeueW01-ThinIt";
+font-family:"Frutiger Neue W01 Light";
+font-family:"FrutigerNeueW01-LightIt";
+font-family:"FrutigerNeueW01-Regular";
+font-family:"Frutiger Neue W01 It";
+font-family:"Frutiger Neue W01 Md";
+font-family:"Frutiger Neue W01 Md It";
+font-family:"Frutiger Neue W01 Bd";
+font-family:"Frutiger Neue W01 Bd It";
+font-family:"Frutiger Neue W01 Heavy";
+font-family:"FrutigerNeueW01-HeavyIt";
+font-family:"Frutiger Neue W01 Blk";
+font-family:"FrutigerNeueW01-BlkIt";
