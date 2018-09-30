@@ -1,5 +1,5 @@
 /* COLORS */
-$background: #fafafa;
+$background: rgba(250, 250, 250,.75);
 $dark-b: #092043;
 $gray: #8B8D8C;
 $font-dark: #5c5c5c;
@@ -44,52 +44,14 @@ $font-dark: #5c5c5c;
 }
 
 //Page
-body{
-  width: 100%;
-  height: auto;
-  background-color: $background;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size:62.5%;
-}
-
-.full {
-  width: 100%;
-  overflow: hidden;
-  background: $background;
-}
-
-header {
-  background: $background;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-content: baseline;
-}
-
-
-
-.home_img_overlay {
-  height: 100%;
-  top: 0;
-  opacity: .8;
-}
-
 img {
   width: 100%;
-  .home_focal {
-    min-height: 370px;
-  }
 }
 
 .listings{
   @include font-serif(2.5em,#092043);
   letter-spacing: .07em;
   list-style-type: none;
-
 }
 
 h1 {
@@ -114,91 +76,66 @@ p {
   line-height: 1.4em;
 }
 
-li {
-  @include font-sans-serif(1.4em,#7c7979);
-  margin-top: 5%;
-  letter-spacing: .05em;
-  font-weight: 300;
-  line-height: 1.6em;
-  list-style-type: disc;
-}
-
 
 .listings_3 {
   width: 90%;
-  margin: 30px auto;
+  padding: 5%;
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: unset;
+  background: rgba (250, 250, 250, .77);
 }
-
-.listing_description h1{
-  @include font-serif(5em,#D3D3D3);
-  letter-spacing: .2em;
-  margin: 3% 48% 4%;
-  text-align: right;
-  width: 50%;
-
-}
-.description {
-  width: 50%;
-  margin: 20px;
-}
-
 
 .property_imgs {
-  width: 100%;
-  display: flex;
-  margin: 0 auto;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 figure {
   width: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* COLORS */
 /* FONT */
 body {
   width: 100%;
-  height: auto;
   background-color: $background;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 62.5%;
+  flex-direction: column;
 }
 
 .full {
   width: 100%;
-  overflow: hidden;
-  background: $background;
-}
+  background: rgba(250, 250, 250, 0.75);
+      /* The image used */
+      background-image: url("/Users/Lou/Documents/GitHub/pages/BPD/images/hines_road/front_full_angle_cropped2.jpg");
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 30px;
+  }
+
 
 header {
-  background: $background;
-  width: 100%;
+  background: #fafafa;
   display: flex;
   flex-direction: row;
-  align-content: baseline;
-}
+  }
 
-.logo_home {
-  width: 19%;
-  height: auto;
-  margin-right: 10%;
-}
+  .logo_home {
+    width: 10%;
+    margin-right: 10%;
+    }
+
 
 .logo {
   width: 100%;
@@ -207,14 +144,14 @@ header {
 
 ul.nav {
   display: flex;
-  justify-content: space-evenly;
-  width: 60%;
-  align-items: center;
+  justify-content: space-between;
+  width: 70%;
   li {
-    @include font-sans-serif(1.6em);
+    @include font-sans-serif(2em);
     font-variant: small-caps;
     letter-spacing: .2em;
     list-style-type: none;
+    font-weight: 400;
   }
 }
 
@@ -239,22 +176,37 @@ ul.nav {
   flex-direction: column;
 }
 
-img {
-  display: inline-block;
-  .home_focal {
-    height: 100%;
-    width: auto;
-  }
+section.listing_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    h1{
+      @include font-serif(5em,#D3D3D3);
+      letter-spacing: .2em;
+      margin: 4% 2% 4%;
+      text-align: right;
+      width: 33%;
+
+    }
 }
 
-.listings {
-  font-family: 'Roboto Slab', serif;
-  color: $font-dark;
-  font-size: 3.2em;
+img {
+  display: inline-block;
+}
+
+img.home_focal {
+    width: 100%;
+  }
+
+
+h1.listings {
+  @include font-sans-serif(3.2em,#092043);
   letter-spacing: .1em;
   margin: 3% 1% 4%;
   text-align: left;
   width: 50%;
+  text-transform: capitalize;
 }
 
 p {
@@ -269,7 +221,7 @@ p {
 
 li {
   @include font-sans-serif();
-  margin-top: 5%;
+  padding: 2%;
   letter-spacing: .05em;
   font-weight: 300;
   line-height: 1.6em;
@@ -288,6 +240,17 @@ li {
   }
 }
 
+.property_imgs {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+figure {
+  width: 25%;
+}
+
+
 .description {
   width: 50%;
   margin: 20px;
@@ -299,6 +262,20 @@ section.Interior, section.amenities {
   margin: 0 2%;
 }
 
+//RESPONSIVE
+
+@media only screen and (max-width: 1110px) {
+  img.home_focal {
+      height: 100%;
+    }
+
+}
+
+
+//HINES ROAD 2
+body, html {
+    height: 100%;
+}
 
 
 /*# sourceMappingURL=styles.css.map */
