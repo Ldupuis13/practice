@@ -48,9 +48,6 @@ strong {
   display: flex;
   flex-direction: column;
   width: 28%; }
-  .logo a {
-    text-decoration: none;
-    display: flex; }
   .logo h1 {
     margin: 0 0 0 2%;
     font-family: 'Source Sans Pro', serif;
@@ -117,6 +114,9 @@ button.navbar-toggle {
   background-color: #505858;
   color: #ddd;
   overflow: hidden; }
+
+img {
+  width: 100%; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
