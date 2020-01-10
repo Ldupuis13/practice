@@ -163,7 +163,6 @@ img {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: space-between;
-  align-items: center; }
   .horizontal .gallery, .vertical .gallery {
     display: flex;
     justify-content: center;
