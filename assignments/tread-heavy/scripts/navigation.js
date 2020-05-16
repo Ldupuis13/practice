@@ -7,3 +7,12 @@ function myFunction() {
   x.className = "topnav";
  }
 }
+
+
+function myFunctionTwo() {
+var elmnt = document.getElementById("Tear");
+var b = elmnt.scrollLeft;
+var c = elmnt.scrollTop;
+}
+
+console.log(c);
